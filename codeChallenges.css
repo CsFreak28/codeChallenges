@@ -7,6 +7,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #bebebe;
+}
 .container{
     padding: 30px;
 }
@@ -19,4 +22,5 @@ p{
     font-family:'space';
     font-size: 1.5rem;
     text-align: center;
+    margin: 1rem 0rem;
 }

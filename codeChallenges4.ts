@@ -52,4 +52,5 @@ function transformSequence(
   }
 }
 
-transformSequence("bit", "fat", ["bot", "dot", "dob", "kat", "log", "fat"]);
+transformSequence("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]);
+// output = ['hit','hot','dot','dog','cog']
