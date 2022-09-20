@@ -12,15 +12,15 @@
 //     console.log(lowestNumber);
 //   }
 // }
+
 // findLowestPositiveInteger([1, 3, 4, 5, 7]);
-function addNumbersWithoutLoop(array, index) {
-    if (index === void 0) { index = 0; }
-    var total = 0;
-    var currentNumber = array[index];
-    total = total + currentNumber;
-    if (array[index + 1] != undefined) {
-        total += addNumbersWithoutLoop(array, index + 1);
-    }
-    return total;
+function addNumbersWithoutLoop(array: Array<number>, index: number = 0) {
+  let total = 0;
+  let currentNumber = array[index];
+  total = total + currentNumber;
+  if (array[index + 1] != undefined) {
+    total += addNumbersWithoutLoop(array, index + 1);
+  }
+  return total;
 }
 console.log(addNumbersWithoutLoop([1, 2, 3,], 0));
