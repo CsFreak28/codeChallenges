@@ -18,9 +18,10 @@ function addNumbersWithoutLoop(array: Array<number>, index: number = 0) {
   let total = 0;
   let currentNumber = array[index];
   total = total + currentNumber;
+  console.log(total);
   if (array[index + 1] != undefined) {
     total += addNumbersWithoutLoop(array, index + 1);
   }
   return total;
 }
-console.log(addNumbersWithoutLoop([1, 2, 3,], 0));
+console.log(addNumbersWithoutLoop([1, 2, 3], 0));
